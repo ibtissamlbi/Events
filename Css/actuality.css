@@ -1,0 +1,123 @@
+/*       styleAdded */
+/* buttton style */
+.button-cont {
+    text-align: center;
+  }
+  
+  .responsive-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #385c90; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .responsive-btn:hover {
+    background-color: #385c90;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+  }
+  /*End button style */
+
+    /* Article */
+  article{
+
+    color: hsl(0, 0%, 0%);
+    border-radius: 0.3125rem;
+    box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.9);
+  }
+  /* End Article */
+  /* Article hover */
+  article:hover{
+     transform: translateY(-1.5rem);
+    box-shadow: 2px 3px 18px rgba(0, 0, 250, 0.9);
+    transform:scale3d(1.07, 1.07, 1.07);
+     transition: opacity 1s ;
+
+ }
+  /* End Article hover */
+  /* image hover */
+  .image-responsive:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+
+
+  
+  /* End image hover */
+  /* End added style */
+
+/*head-wrapper*/
+
+.head-wrapper{
+    background-image: url("../images/actu.webp");
+    width: 100%;
+    height: 400px;
+}
+/*End head-wrapper*/
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.item {
+    min-width: 100%;
+    height: 400px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allows content under arrows to be clickable */
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 250, 0.5);
+    color:  #385c90 ;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: all; /* Enables button clicks */
+}
+
+.timeRunning {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red; /* Placeholder for time indicator */
+}
